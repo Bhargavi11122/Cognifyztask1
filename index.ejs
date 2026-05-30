@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1, initial-scale=1.0">
+    <title>Task1-Form Submission</title>
+</head>
+<body>
+    <h2>Cognifyz Internship-Task 1</h2>
+    <form action="/submit" method="POST">
+        <label> NAME:</label>
+        <input trype="text" name="Username" required>
+        <br><br>
+        <button type="submit">Submit</button>
+    </form>
+    <% if (typeof name!== 'undefined') { %>
+        <h3> HELLO! <%= name %>, your form is submitted!</h3>
+    <% } %>
+    
+</body>
+</html>
